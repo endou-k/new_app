@@ -1,0 +1,15 @@
+<h1>Pages#top</h1>
+
+    <% if session[:user_id] %>
+          
+<div class="main">
+   <%= link_to "Question", questions_path %>
+   <%= link_to "Quest", "#" %>
+   <%= link_to "Post", "#" %>
+</div>
+      <% else %> 
+   <div class="pa">
+      <a><%= link_to "START", login_path %></a>
+   </div>
+   
+<% end %> 
