@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'posts/top', to: 'posts#top', as: 'post_top'
+  
+
+
+  
+  get   'categorys/new', to: 'categorys#new', as: 'category_new'
+  post  'categorys/create', to: 'categorys#create', as: 'category_create'
+  get   'categorys/show'
+  
+  
   root 'pages#top'
   
   get  'signup',       to: 'users#new',    as: 'signup'

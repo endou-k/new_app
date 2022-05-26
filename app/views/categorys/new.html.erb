@@ -1,0 +1,12 @@
+<h1>Categorys#new</h1>
+
+
+<%= form_for @category, url: category_create_path do |f| %>
+ 
+   言語選択:<input type="text" name="category[title]">
+ 
+   Level選択:<input type="text" name="category[content]">
+ 
+ <%= f.submit "問題作り" %>
+ 
+ <% end %>
